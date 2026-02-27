@@ -1,6 +1,6 @@
 clear
 
-echo "
+print -r -- "
                    %%@@
                  %%%%@@@@
                %%%%%  @@@@@
@@ -21,9 +21,9 @@ echo "
 
 "
 
-BOLD="\[\033[1m\]"
-GREEN="\[\033[32m\]"
-BLUE="\[\033[34m\]"
-RESET="\[\033[0m\]"
+BOLD=$'%{\e[1m%}'
+GREEN=$'%{\e[32m%}'
+BLUE=$'%{\e[34m%}'
+RESET=$'%{\e[0m%}'
 
-PS1="${BOLD}[${GREEN}COREGAME ${BLUE}\w${RESET}${BOLD}]${RESET}$ "
+PROMPT="${BOLD}[${GREEN}COREGAME ${BLUE}%~${RESET}${BOLD}]${RESET}$ "
